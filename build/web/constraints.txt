@@ -1,0 +1,7 @@
+# Versions current on 2023-03-06, the date of the lab's last change. Upstream pins Flask 2.0.3 but not
+# its dependencies; today's Werkzeug 3 removed werkzeug.urls.url_quote, which Flask 2.0.3 imports.
+Werkzeug==2.2.3
+Jinja2==3.1.2
+itsdangerous==2.1.2
+click==8.1.3
+MarkupSafe==2.1.2

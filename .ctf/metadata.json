@@ -1,0 +1,14 @@
+{
+  "title": "OWASP SKF NoSQL Injection",
+  "description": "A Flask comment board with registration and login on a MongoDB database running in the same container. The JSON body of the login and comment requests goes straight into MongoDB queries.",
+  "question": "Use MongoDB query operators in the JSON requests to log in as another user and to change comments you do not own (NoSQL injection).",
+  "category": "WEB",
+  "difficulty": 2,
+  "evidence_kind": "SECRET",
+  "capabilities": [
+    "nosql-injection",
+    "mongodb",
+    "authentication-bypass",
+    "injection"
+  ]
+}
