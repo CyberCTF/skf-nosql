@@ -4,11 +4,5 @@
   "question": "Use MongoDB query operators in the JSON requests to log in as another user and to change comments you do not own (NoSQL injection).",
   "category": "WEB",
   "difficulty": 2,
-  "evidence_kind": "SECRET",
-  "capabilities": [
-    "nosql-injection",
-    "mongodb",
-    "authentication-bypass",
-    "injection"
-  ]
+  "evidence_kind": "SECRET"
 }
