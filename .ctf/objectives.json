@@ -1,0 +1,43 @@
+{
+  "objectives": [
+    {
+      "key": "main",
+      "title": "Read the flag",
+      "prompt": "Log in as another user through NoSQL injection and retrieve the flag (/ctf/flag).",
+      "check": {
+        "evidence": "SECRET",
+        "format": "FLAG{%s}"
+      },
+      "dev": "FLAG{dev-skf-nosql}",
+      "hints": [
+        "The JSON body goes straight into the database query.",
+        "Read about MongoDB operator injection."
+      ],
+      "steps": [
+        {
+          "key": "db",
+          "title": "Identify the database",
+          "prompt": "Which database stores the users?",
+          "check": {
+            "answer": [
+              "mongodb",
+              "mongo"
+            ]
+          }
+        },
+        {
+          "key": "class",
+          "title": "Name the weakness",
+          "prompt": "What class of vulnerability is this?",
+          "check": {
+            "answer": [
+              "nosql injection",
+              "nosqli",
+              "mongodb injection"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
